@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Calculator extends Controller
+class Calculator
 {
     /**
      * Handle the incoming request.
