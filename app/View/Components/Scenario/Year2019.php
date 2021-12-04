@@ -4,22 +4,20 @@ namespace App\View\Components\Scenario;
 
 use Illuminate\View\Component;
 
-class PoliticalParty extends Component
+class Year2019 extends Component
 {
     public string $name;
-    public int|string $percentage;
-    private string $type;
+    public int $percentage;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $name, int|string $percentage, string $type)
+    public function __construct(string $name, int|string $percentage)
     {
         $this->name = $name;
         $this->percentage = $percentage;
-        $this->type = $type;
     }
 
     /**
@@ -34,6 +32,6 @@ class PoliticalParty extends Component
 
     private function getViewPath(): string
     {
-        return 'components.scenario.' . $this->type . '.political-party';
+        return 'components.scenario.year-2019.political-party';
     }
 }

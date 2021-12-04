@@ -16,5 +16,5 @@
         </div>
     </div>
 
-    <x-scenario.with-result.main/>
+    <x-scenario.year-2019.main/>
 </div>

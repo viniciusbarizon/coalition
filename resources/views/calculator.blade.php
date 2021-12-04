@@ -6,7 +6,7 @@
             Estes são os cenários mais prováveis. Construa o seu."/>
     </div>
 
-    <footer class="bottom-0 fixed h-36 pt-3 px-2 shadow-inner space-y-2 w-full">
+    <footer class="bottom-0 fixed h-60 pt-3 px-2 shadow-inner space-y-2 w-full">
         <x-scenario.header action="close" actionText="fechar"
             description="Escolha um dos cenários abaixo ou crie o seu próprio" svgComponent="scenario.choose.close"/>
         
