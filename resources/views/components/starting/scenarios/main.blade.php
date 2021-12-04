@@ -20,13 +20,13 @@
     </div>
 
     <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
-        <x-starting.scenarios.ps/>
-        <x-starting.scenarios.psd/>
-        <x-starting.scenarios.cds/>
-        <x-starting.scenarios.pcp/>
-        <x-starting.scenarios.be/>
-        <x-starting.scenarios.il/>
-        <x-starting.scenarios.c/>
-        <x-starting.scenarios.others/>
+        <x-scenarios.ps/>
+        <x-scenarios.psd/>
+        <x-scenarios.cds/>
+        <x-scenarios.pcp/>
+        <x-scenarios.be/>
+        <x-scenarios.il/>
+        <x-scenarios.c/>
+        <x-scenarios.others/>
     </div>
 </div>
