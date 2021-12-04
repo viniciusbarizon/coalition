@@ -1,6 +1,6 @@
 <footer class="bottom-0 fixed h-36 shadow-inner pt-3 px-2 space-y-2 w-full">
-    <x-scenario.header action="alterar" actionComponent="scenario.with-result.update"
-        description="Resultado legislativas 2019" id="update-text"/>
+    <x-scenario.header action="update" actionText="alterar" description="Resultado legislativas 2019"
+        svgComponent="scenario.with-result.update"/>
 
     <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
         <x-scenario.with-result.ps/>

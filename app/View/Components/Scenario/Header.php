@@ -7,21 +7,21 @@ use Illuminate\View\Component;
 class Header extends Component
 {
     public string $action;
-    public string $actionComponent;
+    public string $actionText;
     public string $description;
-    public string $id;
+    public string $svgComponent;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $action, string $actionComponent, string $description, string $id)
+    public function __construct(string $action, string $actionText, string $description, string $svgComponent)
     {
+        $this->actionText = $actionText;
         $this->action = $action;
-        $this->actionComponent = $actionComponent;
         $this->description = $description;
-        $this->id = $id;
+        $this->svgComponent = $svgComponent;
     }
 
     /**
