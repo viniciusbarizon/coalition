@@ -1,5 +1,5 @@
 <footer class="bottom-0 fixed h-36 shadow-inner pt-3 px-2 space-y-2 w-full">
-    <x-scenario.header action="Alterar" actionComponent="scenario.with-result.update"
+    <x-scenario.header action="alterar" actionComponent="scenario.with-result.update"
         description="Resultado legislativas 2019" id="update-text"/>
 
     <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
