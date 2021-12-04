@@ -7,6 +7,6 @@
     </div>
 
     <footer class="bottom-0 fixed h-36 shadow-inner w-full">
-        <x-scenarios.scenarios/>
+        <x-scenario.scenarios/>
     </footer>
 </x-layout>

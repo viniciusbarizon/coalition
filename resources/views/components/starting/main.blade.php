@@ -16,5 +16,5 @@
         </div>
     </div>
 
-    <x-scenarios.with-result.main/>
+    <x-scenario.with-result.main/>
 </div>

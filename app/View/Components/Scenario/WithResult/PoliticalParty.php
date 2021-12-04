@@ -27,6 +27,6 @@ class PoliticalParty extends Component
      */
     public function render()
     {
-        return view('components.scenarios.with-result.political-party');
+        return view('components.scenario.with-result.political-party');
     }
 }
