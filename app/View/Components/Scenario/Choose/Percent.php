@@ -6,13 +6,13 @@ use Illuminate\View\Component;
 
 class Percent extends Component
 {
-    public int|string $percent;
+    public int|string $percent = 0;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(int|string $percent)
+    public function __construct(int|string $percent = 0)
     {
         $this->percent = $percent;
     }
