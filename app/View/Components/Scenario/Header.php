@@ -7,15 +7,17 @@ use Illuminate\View\Component;
 class Header extends Component
 {
     public string $actionComponent;
+    public string $text;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $actionComponent)
+    public function __construct(string $actionComponent, string $text)
     {
         $this->actionComponent = $actionComponent;
+        $this->text = $text;
     }
 
     /**

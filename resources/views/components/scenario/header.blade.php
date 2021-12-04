@@ -5,3 +5,7 @@
 
     <x-dynamic-component component="{{ $actionComponent }}"/>
 </div>
+
+<div class="text-xs">
+    {{ __($text) }}
+</div>
