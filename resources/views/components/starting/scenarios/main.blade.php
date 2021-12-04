@@ -21,9 +21,7 @@
 
     <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
         <div>
-            <div class="text-gray-500">
-                32%
-            </div>
+            <x-starting.scenarios.percent percentage="32"/>
 
             <div class="bg-pink-400 h-8"></div>
 
@@ -33,9 +31,7 @@
         </div>
 
         <div class="self-end">
-            <div class="text-gray-500">
-                28%
-            </div>
+            <x-starting.scenarios.percent percentage="28"/>
 
             <div class="bg-yellow-400 h-6"></div>
 
@@ -45,9 +41,7 @@
         </div>
 
         <div class="self-end">
-            <div class="text-gray-500">
-                12%
-            </div>
+            <x-starting.scenarios.percent percentage="12"/>
 
             <div class="bg-blue-400 h-4"></div>
 
@@ -57,9 +51,7 @@
         </div>
 
         <div class="self-end">
-            <div class="text-gray-500">
-                12%
-            </div>
+            <x-starting.scenarios.percent percentage="12"/>
 
             <div class="bg-red-500 h-4"></div>
 
@@ -69,9 +61,7 @@
         </div>
 
         <div class="self-end">
-            <div class="text-gray-500">
-                8%
-            </div>
+            <x-starting.scenarios.percent percentage="8"/>
 
             <div class="bg-yellow-600 h-2"></div>
 
