@@ -1,5 +1,5 @@
 <div class="space-y-4" id="starting">
-    <div class="pt-2 px-2 space-y-4 w-full">
+    <div class="max-w-screen-sm pt-2 px-2 space-y-4">
         <div class="space-y-2">
             <x-calculator-black/>
             <x-weeks-to-go text="Faltam semanas para as eleições. Para governar, é conveniente ter uma maioria.
@@ -73,9 +73,15 @@
         </div>
     </div>
 
-    <div class="shadow-inner pl-2">
-        <div>
-            {{ __('Cenários') }}
+    <div class="max-w-screen-sm shadow-inner pl-2">
+        <div class="flex flex-row font-semibold">
+            <div class="">
+                {{ __('Cenários') }}
+            </div>
+
+            <div class="float-right pr-2 text-blue-300 text-right w-full">
+                {{ __('alterar') }}
+            </div>
         </div>
     </div>
 </div>
