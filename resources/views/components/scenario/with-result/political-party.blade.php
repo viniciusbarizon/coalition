@@ -6,6 +6,6 @@
     {{ $slot }}
 
     <div class="font-semibold">
-        {{ $politicalParty }}
+        {{ $name }}
     </div>
 </div>

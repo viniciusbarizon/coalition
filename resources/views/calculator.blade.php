@@ -15,5 +15,8 @@
                 {{ __('Crie o seu próprio cenário') }}
             </div>
         </div>
+
+        <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
+        </div>
     </footer>
 </x-layout>

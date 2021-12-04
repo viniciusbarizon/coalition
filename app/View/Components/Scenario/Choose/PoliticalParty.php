@@ -1,24 +1,19 @@
 <?php
 
-namespace App\View\Components\Scenario\WithResult;
+namespace App\View\Components\Scenario\Choose;
 
 use Illuminate\View\Component;
 
 class PoliticalParty extends Component
 {
-    public string $name;
-    public int $percentage;
-
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $name, int $percentage)
+    public function __construct()
     {
-        $this->name = $name;
-        $this->percentage = $percentage;
-        
+        //
     }
 
     /**
@@ -28,6 +23,6 @@ class PoliticalParty extends Component
      */
     public function render()
     {
-        return view('components.scenario.with-result.political-party');
+        return view('components.scenario.choose.political-party');
     }
 }
