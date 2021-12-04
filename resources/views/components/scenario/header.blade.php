@@ -3,5 +3,5 @@
         {{ __('Cenários') }}
     </div>
 
-    <x-dynamic-component component="{{ $nameComponent }}"/>
+    <x-dynamic-component component="{{ $actionComponent }}"/>
 </div>

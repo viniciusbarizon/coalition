@@ -4,18 +4,18 @@ namespace App\View\Components\Scenario;
 
 use Illuminate\View\Component;
 
-class Scenario extends Component
+class Header extends Component
 {
-    public string $nameComponent;
+    public string $actionComponent;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $nameComponent)
+    public function __construct(string $actionComponent)
     {
-        $this->nameComponent = $nameComponent;
+        $this->actionComponent = $actionComponent;
     }
 
     /**
@@ -25,6 +25,6 @@ class Scenario extends Component
      */
     public function render()
     {
-        return view('components.scenario.scenario');
+        return view('components.scenario.header');
     }
 }
