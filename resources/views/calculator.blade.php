@@ -1,9 +1,7 @@
 <x-layout>
     <div class="pt-2 px-2 space-y-4 w-full" id="starting">
         <div class="space-y-2">
-            <div class="font-semibold h-6 text-xl">
-                <div>{{ __('Calculador de coligações') }}</div>
-            </div>
+            <x-calculator-black/>
 
             <div class="text-xs">
                 {{ __('Faltam semanas para as eleições. Para governar, é conveniente ter uma maioria.
