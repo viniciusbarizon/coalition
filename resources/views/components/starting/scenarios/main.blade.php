@@ -20,68 +20,13 @@
     </div>
 
     <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
-        <div>
-            <x-starting.scenarios.percentage number="32"/>
-
-            <div class="bg-pink-400 h-8"></div>
-
-            <x-starting.scenarios.political-party name="PS"/>
-        </div>
-
-        <div class="self-end">
-            <x-starting.scenarios.percentage number="28"/>
-
-            <div class="bg-yellow-400 h-6"></div>
-
-            <x-starting.scenarios.political-party name="PSD"/>
-        </div>
-
-        <div class="self-end">
-            <x-starting.scenarios.percentage number="12"/>
-
-            <div class="bg-blue-400 h-4"></div>
-
-            <x-starting.scenarios.political-party name="CDS"/>
-        </div>
-
-        <div class="self-end">
-            <x-starting.scenarios.percentage number="12"/>
-
-            <div class="bg-red-500 h-4"></div>
-
-            <x-starting.scenarios.political-party name="PCP"/>
-        </div>
-
-        <div class="self-end">
-            <x-starting.scenarios.percentage number="8"/>
-
-            <div class="bg-yellow-600 h-2"></div>
-
-            <x-starting.scenarios.political-party name="BE"/>
-        </div>
-
-        <div class="self-end">
-            <x-starting.scenarios.percentage number="3"/>
-
-            <div class="bg-blue-200 h-1"></div>
-
-            <x-starting.scenarios.political-party name="IL"/>
-        </div>
-
-        <div class="self-end">
-            <x-starting.scenarios.percentage number="3"/>
-
-            <div class="bg-gray-300 h-1"></div>
-
-            <x-starting.scenarios.political-party name="C"/>
-        </div>
-
-        <div class="self-end">
-            <x-starting.scenarios.percentage number="3"/>
-
-            <div class="bg-gray-600 h-1"></div>
-
-            <x-starting.scenarios.political-party name="..."/>
-        </div>
+        <x-starting.scenarios.ps/>
+        <x-starting.scenarios.psd/>
+        <x-starting.scenarios.cds/>
+        <x-starting.scenarios.pcp/>
+        <x-starting.scenarios.be/>
+        <x-starting.scenarios.il/>
+        <x-starting.scenarios.c/>
+        <x-starting.scenarios.others/>
     </div>
 </div>
