@@ -3,7 +3,7 @@
         {{ $percentage }}
     </div>
 
-    {{ $slot }}
+    <div class="{{ $styles }}"></div>
 
     <div class="font-semibold">
         {{ $name }}

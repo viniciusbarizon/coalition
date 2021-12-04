@@ -8,16 +8,18 @@ class Year2019 extends Component
 {
     public string $name;
     public int $percentage;
+    public string $styles;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $name, int|string $percentage)
+    public function __construct(string $name, int|string $percentage, string $styles)
     {
         $this->name = $name;
         $this->percentage = $percentage;
+        $this->styles = $styles;
     }
 
     /**

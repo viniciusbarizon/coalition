@@ -3,7 +3,7 @@
         svgComponent="scenario.update"/>
 
     <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
-        <x-scenario.year-2019.ps/>
+        <x-scenario.year-2019 name="PS" percentage="32" styles="bg-pink-400 h-8">
         <x-scenario.year-2019.psd/>
         <x-scenario.year-2019.cds/>
         <x-scenario.year-2019.pcp/>
