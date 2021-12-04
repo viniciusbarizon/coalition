@@ -3,7 +3,7 @@
         <div class="space-y-2">
             <x-coalition-calculator/>
             <x-weeks-to-go text="Faltam semanas para as eleições. Para governar, é conveniente ter uma maioria.
-            Escolha ou crie o seu próprio cenário"/>
+                Escolha ou crie o seu próprio cenário"/>
         </div>
 
         <div class="space-y-4">
