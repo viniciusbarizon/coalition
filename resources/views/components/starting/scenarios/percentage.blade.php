@@ -1,3 +1,3 @@
 <div class="text-gray-500">
-    {{ $percentage }}%
+    {{ $number }}%
 </div>

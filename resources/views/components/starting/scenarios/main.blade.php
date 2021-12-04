@@ -21,83 +21,67 @@
 
     <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
         <div>
-            <x-starting.scenarios.percent percentage="32"/>
+            <x-starting.scenarios.percentage number="32"/>
 
             <div class="bg-pink-400 h-8"></div>
 
-            <div class="font-semibold">
-                PS
-            </div>
+            <x-starting.scenarios.political-party name="PS"/>
         </div>
 
         <div class="self-end">
-            <x-starting.scenarios.percent percentage="28"/>
+            <x-starting.scenarios.percentage number="28"/>
 
             <div class="bg-yellow-400 h-6"></div>
 
-            <div class="font-semibold">
-                PSD
-            </div>
+            <x-starting.scenarios.political-party name="PSD"/>
         </div>
 
         <div class="self-end">
-            <x-starting.scenarios.percent percentage="12"/>
+            <x-starting.scenarios.percentage number="12"/>
 
             <div class="bg-blue-400 h-4"></div>
 
-            <div class="font-semibold">
-                CDS
-            </div>
+            <x-starting.scenarios.political-party name="CDS"/>
         </div>
 
         <div class="self-end">
-            <x-starting.scenarios.percent percentage="12"/>
+            <x-starting.scenarios.percentage number="12"/>
 
             <div class="bg-red-500 h-4"></div>
 
-            <div class="font-semibold">
-                PCP
-            </div>
+            <x-starting.scenarios.political-party name="PCP"/>
         </div>
 
         <div class="self-end">
-            <x-starting.scenarios.percent percentage="8"/>
+            <x-starting.scenarios.percentage number="8"/>
 
             <div class="bg-yellow-600 h-2"></div>
 
-            <div class="font-semibold">
-                BE
-            </div>
+            <x-starting.scenarios.political-party name="BE"/>
         </div>
 
         <div class="self-end">
-            <x-starting.scenarios.percent percentage="3"/>
+            <x-starting.scenarios.percentage number="3"/>
 
             <div class="bg-blue-200 h-1"></div>
 
-            <div class="font-semibold">
-                IL
-            </div>
+            <x-starting.scenarios.political-party name="IL"/>
         </div>
 
         <div class="self-end">
-            <x-starting.scenarios.percent percentage="3"/>
+            <x-starting.scenarios.percentage number="3"/>
 
             <div class="bg-gray-300 h-1"></div>
 
-            <div class="font-semibold">
-                C
-            </div>
+            <x-starting.scenarios.political-party name="C"/>
         </div>
 
         <div class="self-end">
-            <x-starting.scenarios.percent percentage="3"/>
+            <x-starting.scenarios.percentage number="3"/>
 
             <div class="bg-gray-600 h-1"></div>
 
-            <div class="font-semibold">
-                ...
-            </div>
+            <x-starting.scenarios.political-party name="..."/>
         </div>
     </div>
 </div>

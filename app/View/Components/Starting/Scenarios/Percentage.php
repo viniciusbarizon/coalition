@@ -4,18 +4,18 @@ namespace App\View\Components\Starting\Scenarios;
 
 use Illuminate\View\Component;
 
-class Percent extends Component
+class Percentage extends Component
 {
-    public int $percentage;
+    public int $number;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(int $percentage)
+    public function __construct(int $number)
     {
-        $this->percentage = $percentage;
+        $this->number = $number;
     }
 
     /**
@@ -25,6 +25,6 @@ class Percent extends Component
      */
     public function render()
     {
-        return view('components.starting.scenarios.percent');
+        return view('components.starting.scenarios.percentage');
     }
 }
