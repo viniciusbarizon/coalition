@@ -1,4 +1,4 @@
-<div class="max-w-screen-sm shadow-inner pt-3 px-2 space-y-2">
+<footer class="bottom-0 fixed h-36 max-w-screen-sm shadow-inner pt-3 px-2 space-y-2 w-full">
     <div class="flex flex-row font-semibold">
         <div>
             {{ __('Cenários') }}
@@ -21,4 +21,4 @@
         <x-scenarios.c/>
         <x-scenarios.others/>
     </div>
-</div>
+</footer>
