@@ -7,10 +7,7 @@
     </div>
 
     <footer class="bottom-0 fixed h-36 pt-3 px-2 shadow-inner w-full">
-        <x-scenario.header nameComponent="scenario.with-result.update"/>
-
-        <div class="text-xs">
-            {{ __('Escolha um dos cenários abaixo ou crie o seu próprio') }}
-        </div>
+        <x-scenario.header actionComponent="scenario.with-result.update"
+            text="Escolha um dos cenários abaixo ou crie o seu próprio"/>
     </footer> --}}
 </x-layout>

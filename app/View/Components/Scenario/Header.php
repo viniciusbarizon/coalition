@@ -6,18 +6,22 @@ use Illuminate\View\Component;
 
 class Header extends Component
 {
+    public string $action;
     public string $actionComponent;
-    public string $text;
+    public string $description;
+    public string $id;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $actionComponent, string $text)
+    public function __construct(string $action, string $actionComponent, string $description, string $id)
     {
+        $this->action = $action;
         $this->actionComponent = $actionComponent;
-        $this->text = $text;
+        $this->description = $description;
+        $this->id = $id;
     }
 
     /**
