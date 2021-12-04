@@ -17,9 +17,8 @@
 
             <div class="space-y-1 text-xs">
                 <div class="flex flex-row space-x-1">
-                    <x-ps-rounded/>
-
-                    <x-plus/>
+                    <x-starting.ps-rounded/>
+                    <x-starting.plus/>
 
                     <div class="bg-yellow-400 py-0.5 rounded-3xl text-center text-white w-12">
                         PSD
@@ -44,15 +43,14 @@
 
             <div class="space-y-1 text-xs">
                 <div class="flex flex-row space-x-1">
-                    <x-ps-rounded/>
-
-                    <x-plus/>
+                    <x-starting.ps-rounded/>
+                    <x-starting.plus/>
 
                     <div class="bg-red-500 py-0.5 rounded-3xl text-center text-white w-12">
                         PCP
                     </div>
 
-                    <x-plus/>
+                    <x-starting.plus/>
 
                     <div class="bg-yellow-600 py-0.5 rounded-3xl text-center text-white w-12">
                         BE
