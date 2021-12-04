@@ -4,18 +4,17 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class WeeksToGo extends Component
+class Header extends Component
 {
-    public string $text;
-
+    public string $weeksToGo;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $text)
+    public function __construct(string $weeksToGo)
     {
-        $this->text = $text;
+        $this->weeksToGo = $weeksToGo;
     }
 
     /**
@@ -25,6 +24,6 @@ class WeeksToGo extends Component
      */
     public function render()
     {
-        return view('components.weeks-to-go');
+        return view('components.header');
     }
 }
