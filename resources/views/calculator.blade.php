@@ -2,12 +2,8 @@
     <div class="pt-2 px-2 space-y-4 w-full" id="starting">
         <div class="space-y-2">
             <x-calculator-black/>
-
-            <div class="text-xs">
-                {{ __('Faltam semanas para as eleições. Para governar, é conveniente ter uma maioria.
-                    Escolha ou crie o seu próprio cenário.')
-                }}
-            </div>
+            <x-weeks-to-go text="Faltam semanas para as eleições. Para governar, é conveniente ter uma maioria.
+            Escolha ou crie o seu próprio cenário"/>
         </div>
 
         <div class="space-y-4">
