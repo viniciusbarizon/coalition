@@ -7,7 +7,7 @@
     </div>
 
     <footer class="bottom-0 fixed h-36 pt-3 px-2 shadow-inner w-full">
-        <x-scenario.header action="fechar" actionComponent="scenario.with-result.update"
+        <x-scenario.header action="fechar" actionComponent="scenario.choose.close"
             description="Escolha um dos cenários abaixo ou crie o seu próprio" id="close-text"/>
     </footer>
 </x-layout>
