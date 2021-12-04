@@ -17,20 +17,29 @@
                 {{ __('Coligações possíveis')}}
             </div>
 
-            <div class="space-y-1 text-sm">
-                <div class="flex flex-row space-x-2">
+            <div class="space-y-1 text-xs">
+                <div class="flex flex-row space-x-1">
                     <x-ps-rounded/>
-                    <div>+</div>
-                    <div class="bg-pink-400 rounded-xl text-center text-sm text-white w-12">PSD</div>
+                    <x-plus/>
+                    <div class="bg-yellow-400 py-0.5 rounded-3xl text-center text-white w-12">PSD</div>
                 </div>
 
-                <div class="space-y-1.5 text-xs">
+                <div class="space-y-1.5 ">
                     <div class="font-semibold">{{ __('O Bloco central') }}</div>
                     <div class="text-gray-400">{{ __('Probabilidade: euromilhões') }}</div>
                     <div>
                         {{ __('Uma reedição da década dos 80, em que Costa e Rio se teriam que entender sobre quem de facto
                             será primeiro ministro.') }}
                     </div>
+                </div>
+            </div>
+
+            <div class="space-y-1 text-xs">
+                <div class="flex flex-row space-x-1">
+                    <x-ps-rounded/>
+                    <x-plus/>
+                    <div class="bg-red-500 py-0.5 rounded-3xl text-center text-white w-12">PCP</div>
+                    <x-plus/>
                 </div>
             </div>
         </div>
