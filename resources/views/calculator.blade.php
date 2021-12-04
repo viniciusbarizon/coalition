@@ -13,9 +13,7 @@
         </div>
 
         <div class="space-y-4">
-            <div class="font-semibold text-sm">
-                {{ __('Coligações possíveis')}}
-            </div>
+            <x-possible/>
 
             <div class="space-y-1 text-xs">
                 <div class="flex flex-row space-x-1">
