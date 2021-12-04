@@ -1,7 +1,7 @@
 <footer class="bottom-0 fixed h-36 shadow-inner pt-3 px-2 space-y-2 w-full">
     <div class="flex flex-row font-semibold">
         <x-scenarios.scenarios/>
-        <x-scenarios.with-result.update id="update" />
+        <x-scenarios.with-result.update />
     </div>
 
     <div class="text-xs">
