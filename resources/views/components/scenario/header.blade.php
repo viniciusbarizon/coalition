@@ -3,7 +3,7 @@
         {{ __('Cenários') }}
     </div>
 
-    <div class="cursor-pointer pr-2 text-blue-300 text-right w-full" id="{{ $action }}-text">
+    <div class="cursor-pointer pr-1 text-blue-300 text-right w-full" id="{{ $action }}-text">
         {{ __($actionText) }}
     </div>
 
