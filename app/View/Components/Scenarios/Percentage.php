@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Starting\Scenarios;
+namespace App\View\Components\Scenarios;
 
 use Illuminate\View\Component;
 

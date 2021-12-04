@@ -3,5 +3,5 @@
 
     <div class="bg-blue-200 h-1"></div>
 
-    <x-starting.scenarios.political-party name="IL"/>
+    <x-scenarios.political-party name="IL"/>
 </div>
