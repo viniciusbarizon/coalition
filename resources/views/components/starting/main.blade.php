@@ -1,5 +1,5 @@
 <div class="space-y-4" id="starting">
-    <div class="max-w-screen-sm pt-2 px-4 space-y-4">
+    <div class="pt-2 px-4 space-y-4">
         <x-header weeksToGo="Faltam semanas para as eleições. Para governar, é conveniente ter uma maioria.
             Escolha ou crie o seu próprio cenário."/>
 
