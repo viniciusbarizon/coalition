@@ -1,4 +1,4 @@
-<div>
+<div class="self-end">
     <x-scenarios.percentage number="32"/>
 
     <div class="bg-pink-400 h-8"></div>
