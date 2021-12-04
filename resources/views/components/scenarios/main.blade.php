@@ -4,7 +4,7 @@
             {{ __('Cenários') }}
         </div>
 
-        <x-scenarios.update/>
+        <x-scenarios.update id="update" />
     </div>
 
     <div class="text-xs">
