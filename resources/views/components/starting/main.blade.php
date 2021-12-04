@@ -14,7 +14,7 @@
             <x-starting.contraption/>
 
             <div class="text-gray-500 text-xs">
-                Para ver outras coligações possíveis, altere os cenários na barra em baixo.
+                {{ __('Para ver outras coligações possíveis, altere os cenários na barra em baixo') }}.
             </div>
         </div>
     </div>
