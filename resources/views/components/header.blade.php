@@ -4,6 +4,6 @@
     </div>
 
     <div class="text-xs">
-        {{ __($weeksToGo) }}.
+        {{ __($weeksToGo) }}
     </div>
 </div>
