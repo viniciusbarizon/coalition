@@ -1,21 +1,21 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Starting\Scenarios;
 
 use Illuminate\View\Component;
 
-class WeeksToGo extends Component
+class Percent extends Component
 {
-    public string $text;
+    public int $percentage;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $text)
+    public function __construct(int $percentage)
     {
-        $this->text = $text;
+        $this->percentage = $percentage;
     }
 
     /**
@@ -25,6 +25,6 @@ class WeeksToGo extends Component
      */
     public function render()
     {
-        return view('components.weeks-to-go');
+        return view('components.starting.scenarios.percent');
     }
 }

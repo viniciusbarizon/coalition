@@ -81,7 +81,7 @@
         </div>
 
         <div class="self-end">
-            <x-starting.scenarios.3-percent/>
+            <x-starting.scenarios.percent percentage="3"/>
 
             <div class="bg-blue-200 h-1"></div>
 
@@ -91,7 +91,7 @@
         </div>
 
         <div class="self-end">
-            <x-starting.scenarios.3-percent/>
+            <x-starting.scenarios.percent percentage="3"/>
 
             <div class="bg-gray-300 h-1"></div>
 
@@ -101,7 +101,7 @@
         </div>
 
         <div class="self-end">
-            <x-starting.scenarios.3-percent/>
+            <x-starting.scenarios.percent percentage="3"/>
 
             <div class="bg-gray-600 h-1"></div>
 
