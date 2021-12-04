@@ -6,16 +6,16 @@ use Illuminate\View\Component;
 
 class Scenario extends Component
 {
-    public string $componentName;
+    public string $nameComponent;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $componentName)
+    public function __construct(string $nameComponent)
     {
-        $this->componentName = $componentName;
+        $this->nameComponent = $nameComponent;
     }
 
     /**

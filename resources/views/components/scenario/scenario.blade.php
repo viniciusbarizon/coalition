@@ -3,6 +3,5 @@
         {{ __('Cenários') }}
     </div>
 
-    <x-scenario.with-result.update />
-    <x-dynamic-component :component="$componentName"/>
+    <x-dynamic-component component="{{ $nameComponent }}"/>
 </div>

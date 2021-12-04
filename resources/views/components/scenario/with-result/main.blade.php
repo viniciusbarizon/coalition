@@ -1,8 +1,5 @@
 <footer class="bottom-0 fixed h-36 shadow-inner pt-3 px-2 space-y-2 w-full">
-    <div class="flex flex-row font-semibold">
-        <x-scenario.scenarios/>
-        <x-scenario.with-result.update />
-    </div>
+    <x-scenario.scenario nameComponent="scenario.with-result.update"/>
 
     <div class="text-xs">
         {{ __('Resultado legislativas 2019') }}

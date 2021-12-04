@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Scenarios\WithResult;
+namespace App\View\Components\Scenario\WithResult;
 
 use Illuminate\View\Component;
 
