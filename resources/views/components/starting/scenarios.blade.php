@@ -1,4 +1,4 @@
-<div class="max-w-screen-sm shadow-inner pt-3 px-2 space-y-2">
+<div class="max-w-screen-sm shadow-inner pt-3 px-2 space-y-2 self-end">
     <div class="flex flex-row font-semibold">
         <div>
             {{ __('Cenários') }}
