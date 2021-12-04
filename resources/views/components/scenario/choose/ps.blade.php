@@ -1,5 +1,5 @@
-<x-scenario.political-party name="PS" percentage="0%">
-    <div class="bg-pink-100 h-24">
-        0%
+<x-scenario.choose name="PS">
+    <div class="bg-pink-100 w-full h-full">
+        <x-scenario.choose.percent percent="0%"/>
     </div>
-</x-scenario.political-party>
+</x-scenario.choose>
