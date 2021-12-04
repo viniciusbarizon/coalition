@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Scenarios;
+namespace App\View\Components\Scenarios\WithResult;
 
 use Illuminate\View\Component;
 
@@ -27,6 +27,6 @@ class PoliticalParty extends Component
      */
     public function render()
     {
-        return view('components.scenarios.political-party');
+        return view('components.scenarios.with-result.political-party');
     }
 }

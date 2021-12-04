@@ -4,7 +4,7 @@
             {{ __('Cenários') }}
         </div>
 
-        <x-scenarios.update id="update" />
+        <x-scenarios.with-result.update id="update" />
     </div>
 
     <div class="text-xs">
@@ -12,13 +12,13 @@
     </div>
 
     <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
-        <x-scenarios.ps/>
-        <x-scenarios.psd/>
-        <x-scenarios.cds/>
-        <x-scenarios.pcp/>
-        <x-scenarios.be/>
-        <x-scenarios.il/>
-        <x-scenarios.c/>
-        <x-scenarios.others/>
+        <x-scenarios.with-result.ps/>
+        <x-scenarios.with-result.psd/>
+        <x-scenarios.with-result.cds/>
+        <x-scenarios.with-result.pcp/>
+        <x-scenarios.with-result.be/>
+        <x-scenarios.with-result.il/>
+        <x-scenarios.with-result.c/>
+        <x-scenarios.with-result.others/>
     </div>
 </footer>
