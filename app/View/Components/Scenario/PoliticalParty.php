@@ -8,6 +8,7 @@ class PoliticalParty extends Component
 {
     public string $name;
     public int $percentage;
+    public string $type;
 
     /**
      * Create a new component instance.
@@ -18,7 +19,6 @@ class PoliticalParty extends Component
     {
         $this->name = $name;
         $this->percentage = $percentage;
-        
     }
 
     /**
