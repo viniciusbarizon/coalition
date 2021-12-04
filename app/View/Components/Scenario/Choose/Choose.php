@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components\Scenario;
+namespace App\View\Components\Scenario\Choose;
 
 use Illuminate\View\Component;
 
-class Choose extends Component
+class Main extends Component
 {
     public string $name;
 
@@ -25,6 +25,6 @@ class Choose extends Component
      */
     public function render()
     {
-        return view('components.scenario.choose');
+        return view('components.scenario.choose.main');
     }
 }
