@@ -33,7 +33,7 @@
                         {{ __('O Bloco central') }}
                     </div>
 
-                    <div class="text-gray-400">
+                    <div class="text-gray-500">
                         {{ __('Probabilidade: euromilhões') }}
                     </div>
 
@@ -66,7 +66,7 @@
                         {{ __('Geringonça 2.0') }}
                     </div>
 
-                    <div class="text-gray-400">
+                    <div class="text-gray-500">
                         {{ __('Probabilidade: já se viu mais estranho') }}
                     </div>
 
@@ -75,6 +75,10 @@
                             governação.') }}
                     </div>
                 </div>
+            </div>
+
+            <div class="text-gray-500 text-xs">
+                Para ver outras coligações possíveis, altere os cenários na barra em baixo.
             </div>
         </div>
     </div>
