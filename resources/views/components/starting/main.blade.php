@@ -103,43 +103,43 @@
 
             <div class="self-end">
                 <div class="text-gray-500">28%</div>
-                <div class="bg-pink-400 h-6"></div>
+                <div class="bg-yellow-400 h-6"></div>
                 <div class="font-semibold">PSD</div>
             </div>
 
             <div class="self-end">
                 <div class="text-gray-500">12%</div>
-                <div class="bg-pink-400 h-4"></div>
+                <div class="bg-blue-400 h-4"></div>
                 <div class="font-semibold">CDS</div>
             </div>
 
             <div class="self-end">
                 <div class="text-gray-500">12%</div>
-                <div class="bg-pink-400 h-4"></div>
+                <div class="bg-red-500 h-4"></div>
                 <div class="font-semibold">PCP</div>
             </div>
 
             <div class="self-end">
                 <div class="text-gray-500">8%</div>
-                <div class="bg-pink-400 h-2"></div>
+                <div class="bg-yellow-600 h-2"></div>
                 <div class="font-semibold">BE</div>
             </div>
 
             <div class="self-end">
                 <div class="text-gray-500">3%</div>
-                <div class="bg-pink-400 h-1"></div>
+                <div class="bg-blue-200 h-1"></div>
                 <div class="font-semibold">IL</div>
             </div>
 
             <div class="self-end">
                 <div class="text-gray-500">3%</div>
-                <div class="bg-pink-400 h-1"></div>
+                <div class="bg-gray-300 h-1"></div>
                 <div class="font-semibold">C</div>
             </div>
 
             <div class="self-end">
                 <div class="text-gray-500">3%</div>
-                <div class="bg-pink-400 h-1"></div>
+                <div class="bg-gray-600 h-1"></div>
                 <div class="font-semibold">...</div>
             </div>
         </div>
