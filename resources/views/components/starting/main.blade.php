@@ -19,5 +19,5 @@
         </div>
     </div>
 
-    <x-starting.scenarios.main/>
+    <x-scenarios.main/>
 </div>

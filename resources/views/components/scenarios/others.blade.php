@@ -1,5 +1,5 @@
 <div class="self-end">
-    <x-starting.scenarios.percentage number="3"/>
+    <x-scenarios.percentage number="3"/>
 
     <div class="bg-gray-600 h-1"></div>
 
