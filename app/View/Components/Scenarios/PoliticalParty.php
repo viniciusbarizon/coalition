@@ -6,16 +6,18 @@ use Illuminate\View\Component;
 
 class PoliticalParty extends Component
 {
-    public string $name;
+    public int $percentage;
+    public string $politicalParty;
 
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct(string $name)
+    public function __construct(int $percentage, string $politicalParty)
     {
-        $this->name = $name;
+        $this->percentage = $percentage;
+        $this->politicalParty = $politicalParty;
     }
 
     /**

@@ -1,7 +1,3 @@
-<div class="self-end">
-    <x-scenarios.percentage number="32"/>
-
+<x-scenarios.political-party percentage="32" politicalParty="PS">
     <div class="bg-pink-400 h-8"></div>
-
-    <x-scenarios.political-party name="PS"/>
-</div>
+</x-scenarios.political-party>
