@@ -25,6 +25,6 @@ class Percentage extends Component
      */
     public function render()
     {
-        return view('components.starting.scenarios.percentage');
+        return view('components.scenarios.percentage');
     }
 }
