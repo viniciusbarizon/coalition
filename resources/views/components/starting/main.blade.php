@@ -73,13 +73,13 @@
         </div>
     </div>
 
-    <div class="max-w-screen-sm shadow-inner pl-2 pt-3 space-y-2">
+    <div class="max-w-screen-sm shadow-inner pt-3 px-2 space-y-2">
         <div class="flex flex-row font-semibold">
             <div>
                 {{ __('Cenários') }}
             </div>
 
-            <div class="float-right pr-2 text-blue-300 text-right w-full">
+            <div class="pr-2 text-blue-300 text-right w-full">
                 {{ __('alterar') }}
             </div>
 
@@ -99,6 +99,48 @@
                 <div class="text-gray-500">32%</div>
                 <div class="bg-pink-400 h-8"></div>
                 <div class="font-semibold">PS</div>
+            </div>
+
+            <div class="self-end">
+                <div class="text-gray-500">28%</div>
+                <div class="bg-pink-400 h-6"></div>
+                <div class="font-semibold">PSD</div>
+            </div>
+
+            <div class="self-end">
+                <div class="text-gray-500">12%</div>
+                <div class="bg-pink-400 h-4"></div>
+                <div class="font-semibold">CDS</div>
+            </div>
+
+            <div class="self-end">
+                <div class="text-gray-500">12%</div>
+                <div class="bg-pink-400 h-4"></div>
+                <div class="font-semibold">PCP</div>
+            </div>
+
+            <div class="self-end">
+                <div class="text-gray-500">8%</div>
+                <div class="bg-pink-400 h-2"></div>
+                <div class="font-semibold">BE</div>
+            </div>
+
+            <div class="self-end">
+                <div class="text-gray-500">3%</div>
+                <div class="bg-pink-400 h-1"></div>
+                <div class="font-semibold">IL</div>
+            </div>
+
+            <div class="self-end">
+                <div class="text-gray-500">3%</div>
+                <div class="bg-pink-400 h-1"></div>
+                <div class="font-semibold">C</div>
+            </div>
+
+            <div class="self-end">
+                <div class="text-gray-500">3%</div>
+                <div class="bg-pink-400 h-1"></div>
+                <div class="font-semibold">...</div>
             </div>
         </div>
     </div>
