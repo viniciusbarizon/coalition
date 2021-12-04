@@ -19,7 +19,7 @@
 
             <div class="space-y-1 text-sm">
                 <div class="flex flex-row space-x-2">
-                    <div class="bg-pink-400 rounded-xl text-center text-white w-12">PS</div>
+                    <x-ps-rounded/>
                     <div>+</div>
                     <div class="bg-pink-400 rounded-xl text-center text-sm text-white w-12">PSD</div>
                 </div>
