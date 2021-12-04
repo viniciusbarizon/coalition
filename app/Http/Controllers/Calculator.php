@@ -14,6 +14,6 @@ class Calculator
      */
     public function __invoke(Request $request)
     {
-        //
+        return view('calculator');
     }
 }
