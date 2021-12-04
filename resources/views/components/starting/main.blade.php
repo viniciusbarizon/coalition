@@ -93,5 +93,13 @@
         <div class="text-xs">
             {{ __('Resultado legislativas 2019') }}
         </div>
+
+        <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
+            <div>
+                <div class="text-gray-500">32%</div>
+                <div class="bg-pink-400 h-8"></div>
+                <div class="font-semibold">PS</div>
+            </div>
+        </div>
     </div>
 </div>
