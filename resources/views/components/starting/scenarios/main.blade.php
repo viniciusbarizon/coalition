@@ -81,9 +81,7 @@
         </div>
 
         <div class="self-end">
-            <div class="text-gray-500">
-                3%
-            </div>
+            <x-starting.scenarios.3-percent/>
 
             <div class="bg-blue-200 h-1"></div>
 
@@ -93,9 +91,7 @@
         </div>
 
         <div class="self-end">
-            <div class="text-gray-500">
-                3%
-            </div>
+            <x-starting.scenarios.3-percent/>
 
             <div class="bg-gray-300 h-1"></div>
 
@@ -105,9 +101,7 @@
         </div>
 
         <div class="self-end">
-            <div class="text-gray-500">
-                3%
-            </div>
+            <x-starting.scenarios.3-percent/>
 
             <div class="bg-gray-600 h-1"></div>
 
