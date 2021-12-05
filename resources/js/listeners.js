@@ -10,6 +10,8 @@ var startingStyles = document.getElementById('starting').style;
 function update()
 {
     startingStyles.display = "none";
+    document.getElementById('none-possible').style.display = "none";
+
     expandedStyles.display = "block";
 }
 

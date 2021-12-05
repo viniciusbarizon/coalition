@@ -1,31 +1,35 @@
 function increase(partyId)
 {
-    let newPercentage = getNewPercentage(partyId);
+    let newPercentageOthers = getNewPercentageMinus('others');
 
-    if (newPercentage == 100) {
+    if (newPercentageOthers == 0) {
         if (!confirm('Após esta mudança, vamos calcular se o cenário consegue formar uma maioria. Deseja continuar?')) {
             return;
         }
 
         // I do not see on Figma any instructions about the response for the successfull coalition.
+        document.getElementById('expanded').style.display = 'none';
+        document.getElementById('none-possible').style.display = 'block';
     }
 
-    increasePercentage(partyId, newPercentage);
-    decreasePercentage('others', getPercentage('others'));
+    decreasePercentage('others', newPercentageOthers);
+    increasePercentage(partyId);
 }
 
-function getPercentage(partyId)
+function getNewPercentageMinus(partyId)
+{
+    return getPercentageInt(partyId) - 1;
+}
+
+function getPercentageInt(partyId)
 {
     return parseInt(getPercentageObject(partyId).innerHTML);
 }
 
-function getNewPercentage(partyId)
+function increasePercentage(partyId)
 {
-    return getPercentage(partyId) + 1;
-}
+    let newPercentage = getPercentageInt(partyId) + 1;
 
-function increasePercentage(partyId, newPercentage)
-{
     enableIncrease(partyId, newPercentage);
 
     getPercentageObject(partyId).innerHTML = newPercentage;
@@ -33,10 +37,8 @@ function increasePercentage(partyId, newPercentage)
     document.getElementById(partyId + '-background').style.height = newPercentage;
 }
 
-function decreasePercentage(partyId, percentage)
+function decreasePercentage(partyId, newPercentage)
 {
-    let newPercentage = percentage - 1;
-
     newPercentageIsZero(partyId, newPercentage);
 
     getPercentageObject(partyId).innerHTML = newPercentage;
@@ -97,7 +99,7 @@ function getPercentageObject(partyId)
 
 function decrease(partyId)
 {
-    decreasePercentage(partyId, getPercentage(partyId));
+    decreasePercentage(partyId, getNewPercentageMinus(partyId));
 
     increasePercentage('others', getNewPercentage('others'));
 }
