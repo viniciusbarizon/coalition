@@ -19,7 +19,8 @@ function increase(partyId)
     let percentage = getPercentage(partyId);
     let percentageInt = getPercentageInt(percentage);
 
-    increaseBackgroundHeight(partyId, percentageInt);
+    increaseHeight(partyId, percentageInt);
+    decreaseHeightOthers(othersInt);
 
     decreasePercentage(othersInt, others);
     increasePercentage(percentageInt, percentage);
@@ -40,9 +41,14 @@ function getPercentage(partyId)
     return document.getElementById(partyId + '-percentage');
 }
 
-function increaseBackgroundHeight(partyId, percentageInt)
+function increaseHeight(partyId, percentageInt)
 {
     document.getElementById(partyId + '-background').style.height = (percentageInt + 1) + 'px';
+}
+
+function decreaseHeightOthers(percentageInt)
+{
+    document.getElementById('others-background').style.height = (percentageInt - 1) + 'px';
 }
 
 function decreasePercentage(currentPercentage, party)
