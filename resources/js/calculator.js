@@ -3,5 +3,6 @@ document.getElementById("update-svg").addEventListener("click", update);
 
 function update()
 {
-    console.log("CLICK");
+    document.getElementById('starting').style.display = "none";
+    document.getElementById('expanded').style.display = "block";
 }
