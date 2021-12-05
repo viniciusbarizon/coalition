@@ -1,7 +1,15 @@
 function increase(partyId)
 {
-    updatePercentage('decrease', 'others', getPercentage('others'));
-    updatePercentage('increase', partyId, getPercentage(partyId));
+    let newPercentage = getNewPercentage(partyId);
+
+    if (newPercentage == 100) {
+        if (!confirm('Após esta mudança, vamos calcular se o cenário consegue formar uma maioria. Deseja continuar?')) {
+            return;
+        }
+    }
+
+    increasePercentage(partyId, newPercentage);
+    decreasePercentage('others', getPercentage('others'));
 }
 
 function getPercentage(partyId)
@@ -9,20 +17,25 @@ function getPercentage(partyId)
     return parseInt(getPercentageObject(partyId).innerHTML);
 }
 
-function updatePercentage(operation, partyId, percentage)
+function getNewPercentage(partyId)
 {
-    let newPercentage;
+    return getPercentage(partyId) + 1;
+}
 
-    if (operation == 'increase') {
-        newPercentage = percentage + 1;
+function increasePercentage(partyId, newPercentage)
+{
+    enableIncrease(partyId, newPercentage);
 
-        enableIncrease(partyId, newPercentage);
-    }
-    else {
-        newPercentage = percentage - 1;
+    getPercentageObject(partyId).innerHTML = newPercentage;
 
-        newPercentageIsZero(partyId, newPercentage);
-    }
+    document.getElementById(partyId + '-background').style.height = newPercentage;
+}
+
+function decreasePercentage(partyId, percentage)
+{
+    let newPercentage = percentage - 1;
+
+    newPercentageIsZero(partyId, newPercentage);
 
     getPercentageObject(partyId).innerHTML = newPercentage;
 
@@ -82,6 +95,7 @@ function getPercentageObject(partyId)
 
 function decrease(partyId)
 {
-    updatePercentage('decrease', partyId, getPercentage(partyId));
-    updatePercentage('increase', 'others', getPercentage('others'));
+    decreasePercentage(partyId, getPercentage(partyId));
+
+    increasePercentage('others', getNewPercentage('others'));
 }
