@@ -1,10 +1,10 @@
-<footer class="bottom-0 fixed h-96 pt-3 px-2 shadow-inner space-y-4 w-full">
+<footer class="bottom-0 fixed h-auto px-2 py-4 shadow-inner space-y-4 w-full">
     <x-scenario.header action="close" actionText="fechar"
         description="Escolha um dos cenários abaixo ou crie o seu próprio" svgComponent="scenario.create.close"/>
 
     <x-scenario.create.choose/>
 
-    <div class="font-semibold text-xs">
+    <div class="font-semibold pb-2 text-xs">
         {{ __('Crie o seu próprio cenário') }}
     </div>
 
