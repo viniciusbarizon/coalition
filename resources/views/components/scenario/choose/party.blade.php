@@ -1,8 +1,8 @@
 <div>
-    <div class="{{ $backgroundLight }} h-24 relative text-gray-700 ">
-        <div class="absolute bottom-0">
+    <div class="{{ $backgroundLight }} h-24 relative text-gray-700">
+        <div class="absolute bottom-0 w-full">
             <div>
-                {{ $percentage }}%
+                {{ $percentage }}
             </div>
 
             <div class="{{ $backgroundDark }} h-0.5"></div>

@@ -17,8 +17,7 @@
         </div>
 
         <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
-            <x-scenario.choose.party backgroundDark="bg-pink-400" backgroundLight="bg-pink-100" name="PS"
-                percentage="32"/>
+            <x-scenario.choose.party backgroundDark="bg-pink-400" backgroundLight="bg-pink-100" name="PS" percentage="0%"/>
         </div>
     </footer>
 </x-layout>
