@@ -9,17 +9,16 @@ function update()
 
 function increase(partyId)
 {
-    if (getPercentage('others') == 0) {
+    let percentageOthers = getPercentage('others');
+
+    if (percentageOthers == 0) {
         return;
     }
 
     let percentage = getPercentage(partyId);
 
-    decreasePercentage('others', percentage);
-    increasePercentage(partyId, percentage);
-
-    increaseHeight(partyId, percentage);
-    decreaseHeightOthers();
+    updatePercentage('decrease', 'others', percentageOthers);
+    updatePercentage('increase', partyId, percentage);
 }
 
 function getPercentage(partyId)
@@ -27,24 +26,19 @@ function getPercentage(partyId)
     return parseInt(document.getElementById(partyId + '-percentage').innerHTML);
 }
 
-function decreasePercentage(partyId, percentage)
+function updatePercentage(operation, partyId, percentage)
 {
-    document.getElementById(partyId + '-percentage').innerHTML = percentage - 1;
-}
+    let newPercentage;
 
-function increasePercentage(partyId)
-{
-    document.getElementById(partyId + '-percentage').innerHTML = percentage + 1;
-}
+    if (operation == 'increase') {
+        newPercentage = percentage + 1;
+    }
+    else {
+        newPercentage = percentage - 1;
+    }
 
-function increaseHeight(partyId)
-{
-    document.getElementById(partyId + '-background').style.height = (getPercentage(partyId) + 1) + 'px';
-}
-
-function decreaseHeightOthers()
-{
-    document.getElementById('others-background').style.height = (getPercentage('others') - 1) + 'px';
+    document.getElementById(partyId + '-percentage').innerHTML = newPercentage;
+    document.getElementById(partyId + '-background').style.height = newPercentage;
 }
 
 /*function decrease(partyId)
