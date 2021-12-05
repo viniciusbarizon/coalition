@@ -1,6 +1,9 @@
 document.getElementById("update-text").addEventListener("click", update);
 document.getElementById("update-svg").addEventListener("click", update);
 
+document.getElementById("close-text").addEventListener("click", close);
+document.getElementById("close-svg").addEventListener("click", close);
+
 var expandedStyles = document.getElementById('expanded').style;
 var startingStyles = document.getElementById('starting').style;
 
