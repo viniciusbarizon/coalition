@@ -2,7 +2,7 @@
     <x-scenario.header action="update" actionText="alterar" description="Resultado legislativas 2019"
         svgComponent="scenario.update"/>
 
-    <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
+    <div class="gap-x-2 grid grid-cols-8 text-xs">
         <x-scenario.year-2019.party name="PS" percentage="32%" styles="bg-pink-400 h-8"/>
         <x-scenario.year-2019.party name="PSD" percentage="28" styles="bg-yellow-400 h-6"/>
         <x-scenario.year-2019.party name="CDS" percentage="12" styles="bg-blue-400 h-4"/>
