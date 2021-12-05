@@ -6,6 +6,8 @@ function increase(partyId)
         if (!confirm('Após esta mudança, vamos calcular se o cenário consegue formar uma maioria. Deseja continuar?')) {
             return;
         }
+
+        // I do not see on Figma any instructions about the response for the successfull coalition.
     }
 
     increasePercentage(partyId, newPercentage);
