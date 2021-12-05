@@ -1,11 +1,16 @@
-<footer class="bottom-0 fixed h-60 pt-3 px-2 shadow-inner space-y-2 w-full">
+<footer class="bottom-0 fixed h-80 pt-3 px-2 shadow-inner space-y-2 w-full">
     <x-scenario.header action="close" actionText="fechar"
         description="Escolha um dos cenários abaixo ou crie o seu próprio" svgComponent="scenario.choose.close"/>
 
-    <div class="font-semibold space-y-4 text-xs">
-        <div class="font-semibold">
-            {{ __('Crie o seu próprio cenário') }}
-        </div>
+    <div class="space-y-1.5 text-blue-400 text-xs">
+        <div>Sondagem SIC/Expresso 31 dez 2021</div>
+        <div>Sondagem TVI/CNN 12 jan 2022</div>
+        <div>Resultado legislativas 2019</div>
+        <div>Resultado legislativas 2015</div>
+    </div>
+
+    <div class="font-semibold text-xs">
+        {{ __('Crie o seu próprio cenário') }}
     </div>
 
     <div class="gap-x-2 grid grid-cols-8 text-xs">
