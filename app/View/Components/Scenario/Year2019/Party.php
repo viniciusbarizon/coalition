@@ -1,10 +1,10 @@
 <?php
 
-namespace App\View\Components\Scenario;
+namespace App\View\Components\Scenario\Year2019;
 
 use Illuminate\View\Component;
 
-class Year2019 extends Component
+class Party extends Component
 {
     public string $name;
     public int $percentage;
@@ -15,7 +15,7 @@ class Year2019 extends Component
      *
      * @return void
      */
-    public function __construct(string $name, int|string $percentage, string $styles)
+    public function __construct(string $name, int $percentage, string $styles)
     {
         $this->name = $name;
         $this->percentage = $percentage;
@@ -29,11 +29,6 @@ class Year2019 extends Component
      */
     public function render()
     {
-        return view($this->getViewPath());
-    }
-
-    private function getViewPath(): string
-    {
-        return 'components.scenario.year-2019.political-party';
+        return view('components.scenario.year-2019.party');
     }
 }
