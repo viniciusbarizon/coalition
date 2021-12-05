@@ -35,6 +35,10 @@ function updatePercentage(operation, partyId, percentage)
 
         newPercentage = percentage + 1;
 
+        if (partyId == 'others') {
+            return;
+        }
+
         if (newPercentage == 1) {
             updateOperationStyles('pointer', 1, 'decrease', partyId);
         } else if(newPercentage == 100) {
@@ -43,14 +47,24 @@ function updatePercentage(operation, partyId, percentage)
     }
     else {
         newPercentage = percentage - 1;
+
+        if (partyId == 'others') {
+            return;
+        }
+
+        if (newPercentage == 0) {
+            updateOperationStyles('not-allowed', 0.25, 'decrease', partyId);
+        }
     }
 
     getPercentageObject(partyId).innerHTML = newPercentage;
+
     document.getElementById(partyId + '-background').style.height = newPercentage;
 }
 
 function updateOperationStyles(cursor, opacity, operation, partyId)
 {
+    console.log(partyId + '-' + operation);
     let styles = document.getElementById(partyId + '-' + operation).style;
 
     styles.cursor = cursor;
