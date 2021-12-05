@@ -15,10 +15,10 @@ class Choose extends Component
     public function __construct()
     {
         $this->scenarios = [
-            'Sondagem SIC/Expresso 31 dez 2021',
-            'Sondagem TVI/CNN 12 jan 2022',
-            'Resultado legislativas 2019',
-            'Resultado legislativas 2015'
+            '2015' => 'Resultado legislativas 2015',
+            '2019' => 'Resultado legislativas 2019',
+            'sic' => 'Sondagem SIC/Expresso 31 dez 2021',
+            'tvi' => 'Sondagem TVI/CNN 12 jan 2022'
         ];
     }
 
