@@ -8,6 +8,7 @@ class Party extends Component
 {
     public string $background;
     public string $backgroundLight;
+    public string $id;
     public string $name;
     public int|string $percentage;
 
@@ -16,10 +17,17 @@ class Party extends Component
      *
      * @return void
      */
-    public function __construct(string $background, string $backgroundLight, string $name, int|string $percentage = 0)
+    public function __construct(
+        string $background,
+        string $backgroundLight,
+        string $id,
+        string $name,
+        int|string $percentage = 0
+    )
     {
         $this->background = $background;
         $this->backgroundLight = $backgroundLight;
+        $this->id = $id;
         $this->name = $name;
         $this->percentage = $percentage;
     }

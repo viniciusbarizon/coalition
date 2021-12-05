@@ -1,7 +1,7 @@
 <div>
     <div class="{{ $backgroundLight }} h-100px relative text-gray-700">
         <div class="absolute bottom-0 w-full">
-            <div class="text-center">
+            <div class="text-center" id="{{ $id }}-percentage">
                 {{ $percentage }}
             </div>
 
@@ -18,7 +18,7 @@
     </div>
 
     <div class="border-2 font-bold mt-2 rounded-lg text-center text-gray-600 text-sm">
-        <div class="border-b-2">
+        <div class="border-b-2" onclick="increase('{{ $id }}')">
             +
         </div>
 
