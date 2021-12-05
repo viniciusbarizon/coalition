@@ -21,9 +21,14 @@
                 percentage="0%"/>
 
             <x-scenario.choose.party background="bg-yellow-400" backgroundLight="bg-yellow-100" name="PSD"/>
-            <x-scenario.choose.party background="bg-blue-400" backgroundLight="bg-blue-100" name="CDS" />
-            <x-scenario.choose.party background="bg-red-600" backgroundLight="bg-red-100" name="PCP" />
-            <x-scenario.choose.party background="bg-red-400" backgroundLight="bg-red-100" name="BE" />
+            <x-scenario.choose.party background="bg-blue-400" backgroundLight="bg-blue-100" name="CDS"/>
+            <x-scenario.choose.party background="bg-red-600" backgroundLight="bg-red-100" name="PCP"/>
+            <x-scenario.choose.party background="bg-red-400" backgroundLight="bg-red-100" name="BE"/>
+            <x-scenario.choose.party background="bg-blue-200" backgroundLight="bg-blue-100" name="IL"/>
+            <x-scenario.choose.party background="bg-gray-300" backgroundLight="bg-gray-100" name="C"/>
+
+            <x-scenario.choose.party background="bg-gray-600" backgroundLight="bg-gray-100" name="..."
+                percentage="100"/>
         </div>
     </footer>
 </x-layout>

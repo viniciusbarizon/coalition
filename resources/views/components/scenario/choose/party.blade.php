@@ -5,7 +5,11 @@
                 {{ $percentage }}
             </div>
 
-            <div class="{{ $background }} h-0.5"></div>
+            @if($percentage != 100)
+                <div class="{{ $background }} h-0.5"></div>
+            @else
+                <div class="{{ $background }} h-24"></div>
+            @endif
         </div>
     </div>
 
