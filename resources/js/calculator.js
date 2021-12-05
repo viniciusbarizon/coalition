@@ -7,62 +7,45 @@ function update()
     document.getElementById('expanded').style.display = "block";
 }
 
-var othersPercentage = document.getElementById('others-percentage');
-
 function increase(partyId)
 {
-    let othersInt = getOthersInt();
-
-    if (othersInt == 0) {
+    if (getPercentage('others') == 0) {
         return;
     }
 
-    let percentageObject = getPercentageObject(partyId);
-    let percentage = getPercentage(percentageObject);
+    increaseHeight(partyId);
+    decreaseHeightOthers();
 
-    increaseHeight(partyId, percentage);
-    decreaseHeightOthers(othersInt);
-
-    decreasePercentage(othersInt, othersPercentage);
-    increasePercentage(percentage, percentageObject);
+    decreasePercentage('others');
+    increasePercentage(partyId);
 }
 
-function getOthersInt()
+function getPercentage(partyId)
 {
-    return parseInt(othersPercentage.innerHTML);
+    return parseInt(document.getElementById(partyId + '-percentage').innerHTML);
 }
 
-function getPercentageObject(partyId)
+function increaseHeight(partyId)
 {
-    return document.getElementById(partyId + '-percentage');
+    document.getElementById(partyId + '-background').style.height = (getPercentage(partyId) + 1) + 'px';
 }
 
-function increaseHeight(partyId, percentageInt)
+function decreaseHeightOthers()
 {
-    document.getElementById(partyId + '-background').style.height = (percentageInt + 1) + 'px';
+    document.getElementById('others-background').style.height = (getPercentage('others') - 1) + 'px';
 }
 
-function decreaseHeightOthers(percentageInt)
+function decreasePercentage(partyId)
 {
-    document.getElementById('others-background').style.height = (percentageInt - 1) + 'px';
+    document.getElementById(partyId + '-percentage').innerHTML = getPercentage(partyId) - 1;
 }
 
-function decreasePercentage(currentPercentage, party)
+function increasePercentage(partyId)
 {
-    party.innerHTML = currentPercentage - 1;
+    document.getElementById(partyId + '-percentage').innerHTML = getPercentage(partyId) + 1;
 }
 
-function increasePercentage(currentPercentage, party)
-{
-    party.innerHTML = currentPercentage + 1;
-}
-
-function getPercentage(percentage)
-{
-    return parseInt(percentage.innerHTML);
-}
-
-function decrease(partyId)
+/*function decrease(partyId)
 {
     let percentageObject = getPercentageObject(partyId);
     let percentage = getPercentage(percentageObject);
@@ -72,4 +55,4 @@ function decrease(partyId)
     }
 
     decreasePercentage(percentage, percentageObject);
-}
+}*/
