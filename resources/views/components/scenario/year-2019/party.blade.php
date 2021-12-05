@@ -1,6 +1,6 @@
 <div class="self-end">
     <div class="text-gray-500">
-        {{ $percentage }}%
+        {{ $percentage }}
     </div>
 
     <div class="{{ $styles }}"></div>
