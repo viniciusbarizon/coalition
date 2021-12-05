@@ -37,6 +37,8 @@ function updatePercentage(operation, partyId, percentage)
 
         if (newPercentage == 1) {
             updateOperationStyles('pointer', 1, 'decrease', partyId);
+        } else if(newPercentage == 100) {
+            updateOperationStyles('not-allowed', 0.25, 'increase', partyId);
         }
     }
     else {
