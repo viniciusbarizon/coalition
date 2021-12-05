@@ -23,7 +23,7 @@
                 +
             </div>
 
-            <div class="cursor-pointer">
+            <div class="cursor-pointer" onclick="decrease('{{ $id }}')">
                 -
             </div>
         </div>
