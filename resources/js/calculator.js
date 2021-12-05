@@ -38,18 +38,16 @@ function updatePercentage(operation, partyId, percentage)
         if (newPercentage == 1) {
             updateOperationStyles('pointer', 1, 'decrease', partyId);
         }
-        else if(newPercentage == 100) {
-            updateAllOperationStyles('not-allowed', 0.25, 'increase', partyId);
-        }
     }
     else {
         newPercentage = percentage - 1;
 
         if (newPercentage == 0) {
             updateOperationStyles('not-allowed', 0.25, 'decrease', partyId);
-        }
-        else if(newPercentage == 99) {
-            updateAllOperationStyles('pointer', 1, 'increase', partyId);
+
+            if (partyId == 'others') {
+                disableAllIncreases();
+            }
         }
     }
 
@@ -70,15 +68,11 @@ function updateOperationStyles(cursor, opacity, operation, partyId)
     styles.opacity = opacity;
 }
 
-function updateAllOperationStyles(cursor, opacity, operation, partyId)
+function disableAllIncreases()
 {
-    if (partyId == 'others') {
-        return;
-    }
-
     let parties = ['be', 'c', 'cds', 'il', 'ps', 'psd',  'pcp'];
 
-    parties.forEach(partyId => updateOperationStyles(cursor, opacity, operation, partyId));
+    parties.forEach(partyId => updateOperationStyles('not-allowed', 0.25, 'increase', partyId));
 }
 
 function getPercentageObject(partyId)
