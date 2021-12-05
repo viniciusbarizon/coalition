@@ -14,10 +14,6 @@ function updatePercentage(operation, partyId, percentage)
     let newPercentage;
 
     if (operation == 'increase') {
-        if (percentage == 100) {
-            return;
-        }
-
         newPercentage = percentage + 1;
 
         enableIncrease(partyId, newPercentage);
