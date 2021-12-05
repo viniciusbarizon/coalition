@@ -4,10 +4,10 @@ namespace App\View\Components\Scenario\Choose;
 
 use Illuminate\View\Component;
 
-class Main extends Component
+class Party extends Component
 {
-    public string $backgroundWeak;
-    public string $backgroundStrong;
+    public string $backgroundDark;
+    public string $backgroundLight;
     public string $name;
     public int|string $percentage;
 
@@ -16,10 +16,10 @@ class Main extends Component
      *
      * @return void
      */
-    public function __construct(string $backgroundStrong, string $backgroundWeak, string $name, int|string $percentage)
+    public function __construct(string $backgroundDark, string $backgroundLight, string $name, int|string $percentage)
     {
-        $this->backgroundStrong = $backgroundStrong;
-        $this->backgroundWeak = $backgroundWeak;
+        $this->backgroundDark = $backgroundDark;
+        $this->backgroundLight = $backgroundLight;
         $this->name = $name;
         $this->percentage = $percentage;
     }
