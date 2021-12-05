@@ -1,6 +1,6 @@
 <?php
 
-namespace App\View\Components\Scenario\Choose;
+namespace App\View\Components\Scenario\Create;
 
 use Illuminate\View\Component;
 
@@ -31,6 +31,6 @@ class Party extends Component
      */
     public function render()
     {
-        return view('components.scenario.choose.party');
+        return view('components.scenario.create.party');
     }
 }

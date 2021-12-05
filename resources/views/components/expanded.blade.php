@@ -3,4 +3,4 @@
         Estes são os cenários mais prováveis. Construa o seu."/>
 </div>
 
-<x-scenario.choose.main/>
+<x-scenario.create.main/>
