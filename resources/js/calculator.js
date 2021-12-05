@@ -13,16 +13,28 @@ function increase(partyId)
         return;
     }
 
-    increaseHeight(partyId);
-    decreaseHeightOthers();
+    let percentage = getPercentage(partyId);
 
-    decreasePercentage('others');
-    increasePercentage(partyId);
+    decreasePercentage('others', percentage);
+    increasePercentage(partyId, percentage);
+
+    increaseHeight(partyId, percentage);
+    decreaseHeightOthers();
 }
 
 function getPercentage(partyId)
 {
     return parseInt(document.getElementById(partyId + '-percentage').innerHTML);
+}
+
+function decreasePercentage(partyId, percentage)
+{
+    document.getElementById(partyId + '-percentage').innerHTML = percentage - 1;
+}
+
+function increasePercentage(partyId)
+{
+    document.getElementById(partyId + '-percentage').innerHTML = percentage + 1;
 }
 
 function increaseHeight(partyId)
@@ -33,16 +45,6 @@ function increaseHeight(partyId)
 function decreaseHeightOthers()
 {
     document.getElementById('others-background').style.height = (getPercentage('others') - 1) + 'px';
-}
-
-function decreasePercentage(partyId)
-{
-    document.getElementById(partyId + '-percentage').innerHTML = getPercentage(partyId) - 1;
-}
-
-function increasePercentage(partyId)
-{
-    document.getElementById(partyId + '-percentage').innerHTML = getPercentage(partyId) + 1;
 }
 
 /*function decrease(partyId)
