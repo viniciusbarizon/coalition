@@ -20,29 +20,43 @@ function updatePercentage(operation, partyId, percentage)
 
         newPercentage = percentage + 1;
 
-        if (newPercentage == 1) {
-            updateOperationStyles('pointer', 1, 'decrease', partyId, 'auto');
-
-            if (partyId == 'others') {
-                allIncreases('pointer', 1, 'auto');
-            }
-        }
+        enableIncrease(partyId, newPercentage);
     }
     else {
         newPercentage = percentage - 1;
 
-        if (newPercentage == 0) {
-            updateOperationStyles(null, 0.25, 'decrease', partyId, 'none');
-
-            if (partyId == 'others') {
-                allIncreases(null, 0.25, 'none');
-            }
-        }
+        newPercentageIsZero(partyId, newPercentage);
     }
 
     getPercentageObject(partyId).innerHTML = newPercentage;
 
     document.getElementById(partyId + '-background').style.height = newPercentage;
+}
+
+function enableIncrease(partyId, percentage)
+{
+    if (percentage != 1) {
+        return;
+    }
+
+    updateOperationStyles('pointer', 1, 'decrease', partyId, 'auto');
+
+    if (partyId == 'others') {
+        allIncreases('pointer', 1, 'auto');
+    }
+}
+
+function newPercentageIsZero(partyId, percentage)
+{
+    if (percentage != 0) {
+        return;
+    }
+
+    updateOperationStyles(null, 0.25, 'decrease', partyId, 'none');
+
+    if (partyId == 'others') {
+        allIncreases(null, 0.25, 'none');
+    }
 }
 
 function updateOperationStyles(cursor, opacity, operation, partyId, pointerEvents)
