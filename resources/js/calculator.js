@@ -23,7 +23,7 @@ function increase(partyId)
 
 function getPercentage(partyId)
 {
-    return parseInt(document.getElementById(partyId + '-percentage').innerHTML);
+    return parseInt(getPercentageObject(partyId).innerHTML);
 }
 
 function updatePercentage(operation, partyId, percentage)
@@ -37,8 +37,13 @@ function updatePercentage(operation, partyId, percentage)
         newPercentage = percentage - 1;
     }
 
-    document.getElementById(partyId + '-percentage').innerHTML = newPercentage;
+    getPercentageObject(partyId).innerHTML = newPercentage;
     document.getElementById(partyId + '-background').style.height = newPercentage;
+}
+
+function getPercentageObject(partyId)
+{
+    return document.getElementById(partyId + '-percentage');
 }
 
 /*function decrease(partyId)
