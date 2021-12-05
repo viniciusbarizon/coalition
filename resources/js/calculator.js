@@ -9,13 +9,17 @@ function update()
 
 function increase(partyId)
 {
+    let others = document.getElementById('others-percentage');
+    let othersInt = parseInt(others.innerHTML);
+
     let percentage = document.getElementById(partyId + '-percentage');
     let percentageInt = parseInt(percentage.innerHTML);
 
-    if (percentageInt == 100) {
+    if (othersInt == 0) {
         return;
     }
 
+    others.innerHTML = othersInt - 1;
     percentage.innerHTML = percentageInt + 1;
 }
 
