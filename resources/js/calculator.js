@@ -1,10 +1,19 @@
 document.getElementById("update-text").addEventListener("click", update);
 document.getElementById("update-svg").addEventListener("click", update);
 
+var expandedStyles = document.getElementById('expanded').style;
+var startingStyles = document.getElementById('starting').style;
+
 function update()
 {
-    document.getElementById('starting').style.display = "none";
-    document.getElementById('expanded').style.display = "block";
+    startingStyles.display = "none";
+    expandedStyles.display = "block";
+}
+
+function close()
+{
+    expandedStyles.display = "none";
+    startingStyles.display = "block";
 }
 
 function increase(partyId)
