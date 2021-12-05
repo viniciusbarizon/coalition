@@ -12,6 +12,6 @@
     </div>
 </div>
 
-<div class="text-xs">
+<div class="text-xs w-2/3">
     {{ __($description) }}
 </div>
