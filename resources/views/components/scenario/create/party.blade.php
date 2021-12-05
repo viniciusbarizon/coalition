@@ -23,7 +23,8 @@
                 +
             </div>
 
-            <div class="opacity-25 cursor-not-allowed" id="{{ $id }}-decrease" onclick="decrease('{{ $id }}')">
+            <div class="opacity-25 pointer-events-none" id="{{ $id }}-decrease"
+                onclick="decrease('{{ $id }}')">
                 -
             </div>
         </div>

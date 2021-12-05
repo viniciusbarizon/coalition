@@ -1,12 +1,6 @@
 function increase(partyId)
 {
-    let percentageOthers = getPercentage('others');
-
-    if (percentageOthers == 0) {
-        return;
-    }
-
-    updatePercentage('decrease', 'others', percentageOthers);
+    updatePercentage('decrease', 'others', getPercentage('others'));
     updatePercentage('increase', partyId, getPercentage(partyId));
 }
 
@@ -27,17 +21,21 @@ function updatePercentage(operation, partyId, percentage)
         newPercentage = percentage + 1;
 
         if (newPercentage == 1) {
-            updateOperationStyles('pointer', 1, 'decrease', partyId);
+            updateOperationStyles('pointer', 1, 'decrease', partyId, 'auto');
+
+            if (partyId == 'others') {
+                allIncreases('pointer', 1, 'auto');
+            }
         }
     }
     else {
         newPercentage = percentage - 1;
 
         if (newPercentage == 0) {
-            updateOperationStyles('not-allowed', 0.25, 'decrease', partyId);
+            updateOperationStyles(null, 0.25, 'decrease', partyId, 'none');
 
             if (partyId == 'others') {
-                disableAllIncreases();
+                allIncreases(null, 0.25, 'none');
             }
         }
     }
@@ -47,7 +45,7 @@ function updatePercentage(operation, partyId, percentage)
     document.getElementById(partyId + '-background').style.height = newPercentage;
 }
 
-function updateOperationStyles(cursor, opacity, operation, partyId)
+function updateOperationStyles(cursor, opacity, operation, partyId, pointerEvents)
 {
     if (partyId == 'others') {
         return;
@@ -57,13 +55,14 @@ function updateOperationStyles(cursor, opacity, operation, partyId)
 
     styles.cursor = cursor;
     styles.opacity = opacity;
+    styles.pointerEvents = pointerEvents;
 }
 
-function disableAllIncreases()
+function allIncreases(cursor, opacity, pointerEvents)
 {
     let parties = ['be', 'c', 'cds', 'il', 'ps', 'psd',  'pcp'];
 
-    parties.forEach(partyId => updateOperationStyles('not-allowed', 0.25, 'increase', partyId));
+    parties.forEach(partyId => updateOperationStyles(cursor, opacity, 'increase', partyId, pointerEvents));
 }
 
 function getPercentageObject(partyId)
@@ -73,12 +72,6 @@ function getPercentageObject(partyId)
 
 function decrease(partyId)
 {
-    let percentage = getPercentage(partyId);
-
-    if (percentage == 0) {
-        return;
-    }
-
-    updatePercentage('decrease', partyId, percentage);
+    updatePercentage('decrease', partyId, getPercentage(partyId));
     updatePercentage('increase', 'others', getPercentage('others'));
 }
