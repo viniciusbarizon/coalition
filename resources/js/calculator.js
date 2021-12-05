@@ -49,10 +49,10 @@ function updatePercentage(operation, partyId, percentage)
 
 function updateOperationStyles(cursor, opacity, operation, partyId)
 {
-    let operationObject = document.getElementById(partyId + '-' + operation);
+    let styles = document.getElementById(partyId + '-' + operation).style;
 
-    operationObject.style.cursor = cursor;
-    operationObject.style.opacity = opacity;
+    styles.cursor = cursor;
+    styles.opacity = opacity;
 }
 
 function getPercentageObject(partyId)
