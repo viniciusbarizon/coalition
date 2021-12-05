@@ -1,7 +1,7 @@
 <x-layout>
-    <x-starting.main/>
+    {{-- <x-starting.main/> --}}
 
-    {{-- <div class="opacity-25 pt-2 px-4 space-y-4" id="expanded">
+    <div class="opacity-25 pt-2 px-4 space-y-4" id="expanded">
         <x-header weeksToGo="Faltam poucas semanas para as eleições legislativas antecipadas.
             Estes são os cenários mais prováveis. Construa o seu."/>
     </div>
@@ -17,7 +17,8 @@
         </div>
 
         <div class="gap-x-2 grid grid-cols-8 text-xs w-60">
-            <x-scenario.choose.ps/>
+            <x-scenario.choose.party backgroundStrong="bg-pink-400" backgroundWeak="bg-pink-100" name="PS"
+                percentage="32"/>
         </div>
-    </footer> --}}
+    </footer>
 </x-layout>
