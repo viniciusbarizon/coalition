@@ -17,7 +17,7 @@
         {{ $name }}
     </div>
 
-    <div class="border-2 text-center font-bold text-gray-600 text-sm rounded-lg mt-2">
+    <div class="border-2 font-bold mt-2 rounded-lg text-center text-gray-600 text-sm">
         <div class="border-b-2">+</div>
         <div class="">-</div>
     </div>
