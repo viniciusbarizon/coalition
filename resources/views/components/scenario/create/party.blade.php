@@ -6,9 +6,9 @@
             </div>
 
             @if($percentage != 100)
-                <div class="{{ $background }} h-0.5"></div>
+                <div class="{{ $background }} h-0.5" id="{{ $id }}-background"></div>
             @else
-                <div class="{{ $background }} h-100px"></div>
+                <div class="{{ $background }} h-100px" id="{{ $id }}-background"></div>
             @endif
         </div>
     </div>

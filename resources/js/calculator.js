@@ -9,18 +9,55 @@ function update()
 
 function increase(partyId)
 {
-    let others = document.getElementById('others-percentage');
-    let othersInt = parseInt(others.innerHTML);
+    let others = getOthers();
+    let othersInt = getOthersInt(others);
 
     if (othersInt == 0) {
         return;
     }
 
-    let percentage = document.getElementById(partyId + '-percentage');
-    let percentageInt = parseInt(percentage.innerHTML);
+    let percentage = getPercentage(partyId);
+    let percentageInt = getPercentageInt(percentage);
 
-    others.innerHTML = othersInt - 1;
-    percentage.innerHTML = percentageInt + 1;
+    setBackground(partyId, percentageInt);
+
+    decreasePercentage(othersInt, others);
+    increasePercentage(percentageInt, percentage);
+}
+
+function getOthers()
+{
+    return document.getElementById('others-percentage');
+}
+
+function getOthersInt(others)
+{
+    return parseInt(others.innerHTML);
+}
+
+function getPercentage(partyId)
+{
+    return document.getElementById(partyId + '-percentage');
+}
+
+function setBackground(partyId, percentageInt)
+{
+    document.getElementById(partyId + '-background').style.height = (percentageInt + 1) + 'px';
+}
+
+function decreasePercentage(currentPercentage, party)
+{
+    party.innerHTML = currentPercentage - 1;
+}
+
+function increasePercentage(currentPercentage, party)
+{
+    party.innerHTML = currentPercentage + 1;
+}
+
+function getPercentageInt(percentage)
+{
+    return parseInt(percentage.innerHTML);
 }
 
 function decrease()
