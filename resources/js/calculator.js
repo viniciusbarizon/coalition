@@ -15,10 +15,8 @@ function increase(partyId)
         return;
     }
 
-    let percentage = getPercentage(partyId);
-
     updatePercentage('decrease', 'others', percentageOthers);
-    updatePercentage('increase', partyId, percentage);
+    updatePercentage('increase', partyId, getPercentage(partyId));
 }
 
 function getPercentage(partyId)
@@ -46,14 +44,14 @@ function getPercentageObject(partyId)
     return document.getElementById(partyId + '-percentage');
 }
 
-/*function decrease(partyId)
+function decrease(partyId)
 {
-    let percentageObject = getPercentageObject(partyId);
-    let percentage = getPercentage(percentageObject);
+    let percentage = getPercentage(partyId);
 
     if (percentage == 0) {
         return;
     }
 
-    decreasePercentage(percentage, percentageObject);
-}*/
+    updatePercentage('decrease', partyId, percentage);
+    updatePercentage('increase', 'others', getPercentage('others'));
+}
