@@ -2,12 +2,7 @@
     <x-scenario.header action="close" actionText="fechar"
         description="Escolha um dos cenários abaixo ou crie o seu próprio" svgComponent="scenario.create.close"/>
 
-    <div class="space-y-1.5 text-blue-400 text-xs">
-        <div>Sondagem SIC/Expresso 31 dez 2021</div>
-        <div>Sondagem TVI/CNN 12 jan 2022</div>
-        <div>Resultado legislativas 2019</div>
-        <div>Resultado legislativas 2015</div>
-    </div>
+    <x-scenario.create.choose/>
 
     <div class="font-semibold text-xs">
         {{ __('Crie o seu próprio cenário') }}
