@@ -12,12 +12,12 @@ function increase(partyId)
     let others = document.getElementById('others-percentage');
     let othersInt = parseInt(others.innerHTML);
 
-    let percentage = document.getElementById(partyId + '-percentage');
-    let percentageInt = parseInt(percentage.innerHTML);
-
     if (othersInt == 0) {
         return;
     }
+
+    let percentage = document.getElementById(partyId + '-percentage');
+    let percentageInt = parseInt(percentage.innerHTML);
 
     others.innerHTML = othersInt - 1;
     percentage.innerHTML = percentageInt + 1;
