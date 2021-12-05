@@ -16,8 +16,13 @@
             </div>
         </div>
 
-        <x-scenario.choose.party backgroundDark="bg-pink-400" backgroundLight="bg-pink-100" name="PS"
-            percentage="100%"/>
- 
+        <div class="gap-x-2 grid grid-cols-8 text-xs">
+            <x-scenario.choose.party background="bg-pink-400" backgroundLight="bg-pink-100" name="PS"
+                percentage="0%"/>
+
+            <x-scenario.choose.party background="bg-yellow-400" backgroundLight="bg-yellow-100" name="PSD"/>
+            <x-scenario.choose.party background="bg-blue-400" backgroundLight="bg-blue-100" name="CDS" />
+            <x-scenario.choose.party background="bg-red-500" backgroundLight="bg-red-100" name="PCP" />
+        </div>
     </footer>
 </x-layout>

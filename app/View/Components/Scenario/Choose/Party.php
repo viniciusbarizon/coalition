@@ -6,7 +6,7 @@ use Illuminate\View\Component;
 
 class Party extends Component
 {
-    public string $backgroundDark;
+    public string $background;
     public string $backgroundLight;
     public string $name;
     public int|string $percentage;
@@ -16,9 +16,9 @@ class Party extends Component
      *
      * @return void
      */
-    public function __construct(string $backgroundDark, string $backgroundLight, string $name, int|string $percentage)
+    public function __construct(string $background, string $backgroundLight, string $name, int|string $percentage = 0)
     {
-        $this->backgroundDark = $backgroundDark;
+        $this->background = $background;
         $this->backgroundLight = $backgroundLight;
         $this->name = $name;
         $this->percentage = $percentage;
