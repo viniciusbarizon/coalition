@@ -22,7 +22,8 @@
 
             <x-scenario.choose.party background="bg-yellow-400" backgroundLight="bg-yellow-100" name="PSD"/>
             <x-scenario.choose.party background="bg-blue-400" backgroundLight="bg-blue-100" name="CDS" />
-            <x-scenario.choose.party background="bg-red-500" backgroundLight="bg-red-100" name="PCP" />
+            <x-scenario.choose.party background="bg-red-600" backgroundLight="bg-red-100" name="PCP" />
+            <x-scenario.choose.party background="bg-red-400" backgroundLight="bg-red-100" name="BE" />
         </div>
     </footer>
 </x-layout>

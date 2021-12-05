@@ -1,5 +1,5 @@
 <div class="self-end">
-    <div class="text-gray-500">
+    <div class="text-center text-gray-500">
         {{ $percentage }}
     </div>
 

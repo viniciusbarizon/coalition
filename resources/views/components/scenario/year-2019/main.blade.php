@@ -6,8 +6,8 @@
         <x-scenario.year-2019.party name="PS" percentage="32%" styles="bg-pink-400 h-8"/>
         <x-scenario.year-2019.party name="PSD" percentage="28" styles="bg-yellow-400 h-6"/>
         <x-scenario.year-2019.party name="CDS" percentage="12" styles="bg-blue-400 h-4"/>
-        <x-scenario.year-2019.party name="PCP" percentage="12" styles="bg-red-500 h-4"/>
-        <x-scenario.year-2019.party name="BE" percentage="8" styles="bg-yellow-600 h-2"/>
+        <x-scenario.year-2019.party name="PCP" percentage="12" styles="bg-red-600 h-4"/>
+        <x-scenario.year-2019.party name="BE" percentage="8" styles="bg-red-400 h-2"/>
         <x-scenario.year-2019.party name="IL" percentage="3" styles="bg-blue-200 h-1"/>
         <x-scenario.year-2019.party name="C" percentage="3" styles="bg-gray-300 h-1"/>
         <x-scenario.year-2019.party name="..." percentage="3" styles="bg-gray-600 h-1"/>
