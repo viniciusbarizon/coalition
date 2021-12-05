@@ -23,7 +23,7 @@
                 +
             </div>
 
-            <div class="cursor-pointer opacity-25" onclick="decrease('{{ $id }}')">
+            <div class="cursor-pointer opacity-100" id="{{ $id }}-decrease" onclick="decrease('{{ $id }}')">
                 -
             </div>
         </div>

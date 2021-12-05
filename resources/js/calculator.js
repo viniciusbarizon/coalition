@@ -29,7 +29,16 @@ function updatePercentage(operation, partyId, percentage)
     let newPercentage;
 
     if (operation == 'increase') {
+        if (percentage == 100) {
+            return;
+        }
+
         newPercentage = percentage + 1;
+
+        if (newPercentage == 1) {
+            console.log('remove');
+            document.getElementById(partyId + '-decrease').style.opacity = 1;
+        }
     }
     else {
         newPercentage = percentage - 1;
