@@ -17,13 +17,15 @@
         {{ $name }}
     </div>
 
-    <div class="border-2 font-bold mt-2 rounded-lg text-center text-gray-600 text-sm">
-        <div class="border-b-2 cursor-pointer" onclick="increase('{{ $id }}')">
-            +
-        </div>
+    @if($id != 'others')
+        <div class="border-2 font-bold mt-2 rounded-lg text-center text-gray-600 text-sm">
+            <div class="border-b-2 cursor-pointer" onclick="increase('{{ $id }}')">
+                +
+            </div>
 
-        <div class="cursor-pointer">
-            -
+            <div class="cursor-pointer">
+                -
+            </div>
         </div>
-    </div>
+    @endif
 </div>
