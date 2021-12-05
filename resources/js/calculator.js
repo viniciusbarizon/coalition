@@ -36,7 +36,7 @@ function updatePercentage(operation, partyId, percentage)
         newPercentage = percentage + 1;
 
         if (newPercentage == 1) {
-            console.log('remove');
+            document.getElementById(partyId + '-decrease').style.cursor = 'pointer';
             document.getElementById(partyId + '-decrease').style.opacity = 1;
         }
     }
