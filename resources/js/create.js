@@ -101,5 +101,5 @@ function decrease(partyId)
 {
     decreasePercentage(partyId, getNewPercentageMinus(partyId));
 
-    increasePercentage('others', getNewPercentage('others'));
+    increasePercentage('others');
 }
