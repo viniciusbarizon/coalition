@@ -55,7 +55,6 @@ function setScenario(scenario)
 function setPercentage(partyId, percentage)
 {
     document.getElementById(partyId + '-percentage').innerHTML = percentage;
-    
 }
 
 function setBackgroundHeight(partyId, percentage)
