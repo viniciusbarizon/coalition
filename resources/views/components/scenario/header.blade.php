@@ -3,11 +3,11 @@
         {{ __('Cenários') }}
     </div>
 
-    <div class="cursor-pointer pr-1 text-blue-300 text-right w-full" id="{{ $action }}-text">
+    <div class="cursor-pointer pr-1 text-blue-300 text-right w-full" onclick="{{ $action }}()">
         {{ __($actionText) }}
     </div>
 
-    <div class="cursor-pointer pt-0.5 text-blue-300" id="{{ $action }}-svg">
+    <div class="cursor-pointer pt-0.5 text-blue-300" onclick="{{ $action }}()">
         <x-dynamic-component component="{{ $svgComponent }}"/>
     </div>
 </div>

@@ -1,6 +1,6 @@
 <footer class="bottom-0 fixed h-auto px-2 py-4 shadow-inner space-y-4 w-full">
     <x-scenario.header
-        action="close"
+        action="closeExpanded"
         actionText="fechar"
         description="Escolha um dos cenários abaixo ou crie o seu próprio" svgComponent="scenario.create.close"/>
 
