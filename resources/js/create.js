@@ -7,7 +7,6 @@ function increase(partyId)
             return;
         }
 
-        // I did not see on Figma any instructions about the response for the successfull coalition.
         document.getElementById('expanded').style.display = 'none';
         document.getElementById('none-possible').style.display = 'block';
     }
