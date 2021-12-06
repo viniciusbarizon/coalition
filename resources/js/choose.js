@@ -7,7 +7,8 @@ scenarios['2015'] = [
     ['pcp', 6],
     ['be', 4],
     ['il', 4],
-    ['c', 4]
+    ['c', 4],
+    ['others', 0]
 ];
 
 scenarios['2019'] = [
@@ -17,7 +18,8 @@ scenarios['2019'] = [
     ['pcp', 10],
     ['be', 6],
     ['il', 4],
-    ['c', 2]
+    ['c', 2],
+    ['others', 0]
 ];
 
 scenarios['sic'] = [
@@ -27,7 +29,8 @@ scenarios['sic'] = [
     ['pcp', 8],
     ['be', 6],
     ['il', 4],
-    ['c', 2]
+    ['c', 2],
+    ['others', 0]
 ];
 
 scenarios['tvi'] = [
@@ -37,7 +40,8 @@ scenarios['tvi'] = [
     ['be', 10],
     ['il', 6],
     ['cds', 4],
-    ['c', 2]
+    ['c', 2],
+    ['others', 0]
 ];
 
 function setScenario(scenario)
